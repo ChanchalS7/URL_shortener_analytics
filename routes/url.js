@@ -5,6 +5,6 @@ const {
 }=require("../controllers/url")
 const router=express.Router();
 router.post("/url",shortenedUrlController)
-router.get("/:shortId",getUrlController)
+router.get("/url/:shortId",getUrlController)
 router.get("/analytics/:shortId",getAnalyticsController);
 module.exports=router;
